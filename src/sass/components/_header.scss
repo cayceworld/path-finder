@@ -1,0 +1,104 @@
+.header {
+  background-image: url('../../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  text-transform: uppercase;
+  color: white;
+
+  &__menu {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 40px 0 10% 0;
+
+    a {
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  &__title {
+    height: 100%;
+    padding: 0 0 25% 0;
+    font-weight: 700;
+    max-width: 630px;
+
+    h1 {
+      margin: 0 0 0 auto;
+      font-size: 56px;
+      text-align: center;
+      letter-spacing: 28px;
+    }
+
+    span {
+      margin: 0 0 0 auto;
+      display: block;
+      max-width: 350px;
+      font-size: 22px;
+      letter-spacing: 12px;
+      text-align: center;
+    }
+  }
+}
+
+
+
+@include for-tablet {
+  .header {
+    &__title {
+      h1 {
+        font-size: 36px;
+        letter-spacing: 15px;
+      }
+
+      span {
+        font-size: 18px;
+        letter-spacing: 5px;
+      }
+    }
+  }
+}
+
+@include for-mobile-l {
+  .header {
+    &__title {
+      h1 {
+        font-size: 24px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include for-mobile-m {
+  .header {
+    &__title {
+      h1 {
+        font-size: 20px;
+        letter-spacing: 9px;
+      }
+
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include for-mobile-s {
+  .header {
+    &__title {
+      h1 {
+        font-size: 16px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
