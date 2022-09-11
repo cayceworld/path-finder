@@ -1,0 +1,39 @@
+.finder {}
+
+.container {}
+
+.finder__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.finder__title {
+  margin: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+}
+
+.finder__button {
+  padding: 15px 25px;
+  background-color: rgb(228, 97, 21);
+  color: white;
+  text-transform: uppercase;
+  margin: 35px auto;
+  letter-spacing: 2px;
+}
+
+.finder__container {
+  display: grid;
+  grid-template: repeat(10, 35px) / repeat(10, 35px);
+  justify-content: center;
+
+  .finder__box {
+    border: 1px solid rgb(255, 255, 255);
+    height: 35px;
+    width: 35px;
+  }
+}
