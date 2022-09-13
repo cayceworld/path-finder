@@ -10,6 +10,16 @@ body {
   padding: 0 35px;
 }
 
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}
+
 @mixin for-mobile-s {
   @media (max-width: 320px) { @content; }
 }
