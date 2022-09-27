@@ -1,3 +1,5 @@
+import Finder from './components/Finder.js';
+
 
 
 const app = {
@@ -8,7 +10,7 @@ const app = {
     thisApp.navLinks = document.querySelectorAll('.header__menu a');
     const idFromHash = window.location.hash.replace('#/', '');
 
-    let pageMatchingHash = thisApp.pages[0].id;
+    let pageMatchingHash = thisApp.pages[1].id;
     thisApp.activatePage(pageMatchingHash);
 
 
@@ -36,6 +38,7 @@ const app = {
       });
     }
   },
+
   activatePage: function (pageId) {
     const thisApp = this;
 
@@ -48,12 +51,16 @@ const app = {
     }
   },
 
+  initFinder: function () {
+    const thisApp = this;
 
-
+    thisApp.finder = new Finder();
+  },
 
   init: function () {
     const thisApp = this;
     thisApp.initPages();
+    thisApp.initFinder();
   },
 };
 

@@ -52,112 +52,7 @@
     </section>
     <section class="finder" id="finder">
       <div class="container">
-        <div class="finder__content">
-          <h2 class="finder__title"> draw routet</h2>
-          <div class="finder__container">
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-            <div class="finder__box"></div>
-          </div>
-          <button type="button" class="finder__button"> finish drawing</button>
-        </div>
+        <div id="finder-place-template"> </div>
       </div>
     </section>
   </div>
@@ -165,7 +60,19 @@
     <div class="footer__text">All rights reserved</div>
   </footer>
 
-  <script src="js/app.js" type="module" ></script>
+
+  <script id="finder-template" type="text/x-handlebars-template">
+    <div class="finder__content">
+      <h2 class="finder__title"> {{title}}</h2>
+      <div class="finder__container">
+        
+      </div>
+      <button type="button" class="finder__button"> {{buttonText}} </button>
+    </div>
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+  <script src="js/app.js" type="module"></script>
 </body>
 
 </html>
