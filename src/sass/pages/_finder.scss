@@ -35,9 +35,18 @@
     border: 1px solid rgb(255, 255, 255);
     height: 35px;
     width: 35px;
+    cursor: pointer;
   }
 
-  .finder__box.active{
-    background-color: rgb(34, 168, 34);
+  .finder__box.active {
+    background-color: rgb(194, 78, 0);
+  }
+
+  .finder__box.start-point {
+    background-color: rgb(62, 216, 62);
+  }
+
+  .finder__box.end-point {
+    background-color: rgb(18, 133, 18);
   }
 }
